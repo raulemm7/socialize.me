@@ -5,4 +5,6 @@ Real-time chat for instant communication.
 
 Lazy loading for efficient message display.
 
+Personalized post suggestions based on common interests. (in development)
+
 This project showcases my ability to create user-centered and scalable solutions, combining robust backend development with a modern frontend design.

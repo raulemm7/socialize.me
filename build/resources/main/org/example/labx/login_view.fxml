@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@login_view.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <ImageView fitHeight="400.0" fitWidth="200.0" pickOnBounds="true" BorderPane.alignment="CENTER">
+       <image>
+           <Image url="@welcome_image.jpg" />
+       </image>
+      </ImageView>
+   </left>
+   <right>
+      <VBox prefHeight="400.0" prefWidth="448.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="47.0" prefWidth="144.0">
+               <children>
+                  <Label text="socialize">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Label>
+                  <Label styleClass="label-me" text=".me" />
+               </children>
+               <VBox.margin>
+                  <Insets left="40.0" top="40.0" />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="labelText" prefHeight="71.0" prefWidth="223.0" styleClass="welcome" text="Welcome back! Log in to your account or create a new one" wrapText="true">
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+            </Label>
+            <HBox fx:id="hboxFields" prefHeight="33.0" prefWidth="360.0">
+               <children>
+                  <VBox prefHeight="30.0" prefWidth="150.0">
+                     <children>
+                        <Label fx:id="labelErrorFirstname" prefHeight="12.0" prefWidth="139.0" styleClass="label-error" text="Label" visible="false">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="firstnameField" maxWidth="150.0" prefHeight="30.0" prefWidth="40.0" promptText="First name" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="30.0" prefWidth="168.0">
+                     <children>
+                        <Label fx:id="labelErrorLastname" prefHeight="12.0" prefWidth="135.0" styleClass="label-error" text="Label" visible="false">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="lastnameField" maxWidth="213.0" prefHeight="30.0" prefWidth="40.0" promptText="Last name" />
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="40.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox prefHeight="121.0" prefWidth="360.0">
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+               <children>
+                  <Label fx:id="labelErrorEmail" prefHeight="14.0" prefWidth="277.0" styleClass="label-error" text="pprewerwr" visible="false">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin></Label>
+                  <TextField fx:id="emailField" prefHeight="50.0" prefWidth="320.0" promptText="Email">
+                     <VBox.margin>
+                        <Insets right="40.0" />
+                     </VBox.margin>
+                     <opaqueInsets>
+                        <Insets bottom="1.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <Label fx:id="labelErrorPassword" styleClass="label-error" text="dadasda" visible="false">
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <PasswordField fx:id="passwordField" layoutX="10.0" layoutY="20.0" prefHeight="55.0" prefWidth="320.0" promptText="Password">
+                     <VBox.margin>
+                        <Insets right="40.0" />
+                     </VBox.margin>
+                  </PasswordField>
+               </children>
+            </VBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="exitButton" mnemonicParsing="false" styleClass="buttonExit" stylesheets="@login_view.css" text="Exit" />
+                  <Button fx:id="signUpButton" mnemonicParsing="false" styleClass="button2" text="Sign Up">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="signInButton" mnemonicParsing="false" text="Sign In">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="58.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

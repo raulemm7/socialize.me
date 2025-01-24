@@ -1,0 +1,115 @@
+/* Label */
+.label {
+    -fx-font-size: 34px;          /* Dimensiunea fontului pentru etichete mari */
+    -fx-font-weight: bold;        /* Fontul bold pentru etichete */
+    -fx-text-fill: #333333;       /* Culoarea textului (gri închis) */
+    -fx-wrap-text: true;          /* Permite textului să fie împărțit pe mai multe rânduri */
+}
+
+.label-me {
+    -fx-font-size: 34px;          /* Dimensiunea fontului pentru etichete mari */
+    -fx-font-weight: bold;        /* Fontul bold pentru etichete */
+    -fx-text-fill: #8e5fe2;       /* Culoarea textului (gri închis) */
+    -fx-wrap-text: true;
+}
+
+.label-info {
+    -fx-font-size: 18px;
+    -fx-font-weight: normal;
+}
+
+.label-error{
+    -fx-font-size: 12px;
+    -fx-text-fill: #e42424;
+}
+
+/* Label pentru textul mai mic */
+.welcome {
+    -fx-font-size: 14px;          /* Dimensiune font mai mică */
+    -fx-font-weight: normal;      /* Font normal pentru textul de bun venit */
+    -fx-text-fill: #555555;       /* Culoare gri deschis */
+    -fx-wrap-text: true;          /* Permite textului să se împartă pe mai multe linii */
+}
+
+/* TextField */
+.text-field {
+    -fx-pref-height: 26px;        /* Înălțimea câmpului de text */
+    -fx-pref-width: 340px;        /* Lățimea câmpului de text */
+    -fx-padding: 5px 10px;        /* Margini interne pentru text */
+    -fx-border-radius: 5px;      /* Colțuri rotunjite */
+    -fx-border-color: transparent;   /* Culoare border gri deschis */
+    -fx-border-width: 1px;       /* Grosimea border-ului */
+    -fx-background-color: #e6e0f1; /* Culoare de fundal */
+    -fx-font-weight: bold;
+}
+
+
+
+/* Button */
+.button {
+    -fx-font-size: 13px;          /* Dimensiune font pentru buton */
+    -fx-font-weight: bold;        /* Fontul butonului în bold */
+    -fx-text-fill: white;         /* Culoarea textului butonului */
+    -fx-background-color: rgb(142, 95, 226);; /* Culoare de fundal verde pentru buton */
+    -fx-background-radius: 20px;   /* Colțuri rotunjite ale butonului */
+    -fx-padding: 10px 20px;       /* Margini interioare pentru buton */
+    -fx-border-color: transparent;/* Fără border vizibil */
+}
+
+/* Buton la hover */
+.button:hover {
+    -fx-background-color: #a17be6; /* Culoare mai închisă la hover */
+}
+
+/* Buton la apăsare */
+.button:pressed {
+    -fx-background-color: #7143c3; /* Culoare și mai închisă când este apăsat */
+}
+
+.button2 {
+    -fx-font-size: 13px;          /* Dimensiune font pentru buton */
+    -fx-font-weight: bold;        /* Fontul butonului în bold */
+    -fx-text-fill: #8e5fe2;         /* Culoarea textului butonului */
+    -fx-background-color: rgb(230, 224, 241); /* Culoare de fundal verde pentru buton */
+    -fx-background-radius: 20px;   /* Colțuri rotunjite ale butonului */
+    -fx-padding: 10px 20px;       /* Margini interioare pentru buton */
+    -fx-border-color: transparent;/* Fără border vizibil */
+}
+
+.button2:hover {
+    -fx-background-color: #c8bfd8; /* Culoare mai închisă la hover */
+}
+
+/* Buton la apăsare */
+.button2:pressed {
+    -fx-background-color: #7143c3; /* Culoare și mai închisă când este apăsat */
+}
+
+.buttonExit {
+    -fx-font-size: 13px;          /* Dimensiune font pentru buton */
+    -fx-font-weight: bold;        /* Fontul butonului în bold */
+    -fx-text-fill: white;         /* Culoarea textului butonului */
+    -fx-background-color: rgb(236, 15, 15);; /* Culoare de fundal verde pentru buton */
+    -fx-background-radius: 20px;   /* Colțuri rotunjite ale butonului */
+    -fx-padding: 10px 20px;       /* Margini interioare pentru buton */
+    -fx-border-color: transparent;/* Fără border vizibil */
+}
+
+/* Buton la hover */
+.buttonExit:hover {
+    -fx-background-color: #ea2727; /* Culoare mai închisă la hover */
+}
+
+/* Buton la apăsare */
+.buttonExit:pressed {
+    -fx-background-color: #a80808; /* Culoare și mai închisă când este apăsat */
+}
+
+.anchor-pane-background {
+    -fx-background-color: #e3dcf1; /* Culoare de fundal galbenă */
+    -fx-font-weight: bold;
+}
+
+
+
+

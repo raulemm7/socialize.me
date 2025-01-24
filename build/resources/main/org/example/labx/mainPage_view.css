@@ -1,0 +1,224 @@
+.border-pane {
+    -fx-background-color: #ffffff;
+}
+
+.hbox-line-split {
+    -fx-background-color: #7143c3;
+}
+
+.hbox-top-bar{
+    -fx-background-color: rgb(230, 230, 237);
+}
+
+.label-socialize {
+    -fx-font-size: 20px;          /* Dimensiunea fontului pentru etichete mari */
+    -fx-font-weight: bold;        /* Fontul bold pentru etichete */
+    -fx-text-fill: #333333;       /* Culoarea textului (gri închis) */
+    -fx-wrap-text: true;          /* Permite textului să fie împărțit pe mai multe rânduri */
+}
+
+.label-me {
+    -fx-font-size: 20px;          /* Dimensiunea fontului pentru etichete mari */
+    -fx-font-weight: bold;        /* Fontul bold pentru etichete */
+    -fx-text-fill: #8e5fe2;       /* Culoarea textului (gri închis) */
+    -fx-wrap-text: true;
+}
+
+.button-user {
+    -fx-font-size: 14px;          /* Dimensiune font pentru buton */
+    -fx-font-weight: bold;        /* Fontul butonului în bold */
+    -fx-text-fill: #8e5fe2;         /* Culoarea textului butonului */
+    -fx-background-color: transparent; /* Culoare de fundal verde pentru buton */
+    -fx-background-radius: 20px;   /* Colțuri rotunjite ale butonului */
+    -fx-padding: 10px 20px;       /* Margini interioare pentru buton */
+    -fx-border-color: transparent;/* Fără border vizibil */
+}
+
+.button-selection-mode{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.label-user-name {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.label-user-name2 {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.label-text-info{
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+.label-text-info-purple{
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #8e5fe2;
+}
+
+.buttonNormal {
+    -fx-font-size: 12px;          /* Dimensiune font pentru buton */
+    -fx-font-weight: bold;        /* Fontul butonului în bold */
+    -fx-text-fill: white;         /* Culoarea textului butonului */
+    -fx-background-color: rgb(142, 95, 226);; /* Culoare de fundal verde pentru buton */
+    -fx-background-radius: 20px;   /* Colțuri rotunjite ale butonului */
+    -fx-padding: 10px 20px;       /* Margini interioare pentru buton */
+    -fx-border-color: transparent;/* Fără border vizibil */
+}
+
+/* Buton la hover */
+.buttonNormal:hover {
+    -fx-background-color: #a17be6; /* Culoare mai închisă la hover */
+}
+
+/* Buton la apăsare */
+.buttonNormal:pressed {
+    -fx-background-color: #7143c3; /* Culoare și mai închisă când este apăsat */
+}
+
+.buttonExit {
+    -fx-font-size: 12px;          /* Dimensiune font pentru buton */
+    -fx-font-weight: bold;        /* Fontul butonului în bold */
+    -fx-text-fill: white;         /* Culoarea textului butonului */
+    -fx-background-color: rgb(236, 15, 15);; /* Culoare de fundal verde pentru buton */
+    -fx-background-radius: 20px;   /* Colțuri rotunjite ale butonului */
+    -fx-padding: 10px 20px;       /* Margini interioare pentru buton */
+    -fx-border-color: transparent;/* Fără border vizibil */
+}
+
+/* Buton la hover */
+.buttonExit:hover {
+    -fx-background-color: #ea2727; /* Culoare mai închisă la hover */
+}
+
+/* Buton la apăsare */
+.buttonExit:pressed {
+    -fx-background-color: #a80808; /* Culoare și mai închisă când este apăsat */
+}
+
+.buttonAccept {
+    -fx-font-size: 12px;          /* Dimensiune font pentru buton */
+    -fx-font-weight: bold;        /* Fontul butonului în bold */
+    -fx-text-fill: white;         /* Culoarea textului butonului */
+    -fx-background-color: rgb(15, 241, 7);; /* Culoare de fundal verde pentru buton */
+    -fx-background-radius: 20px;   /* Colțuri rotunjite ale butonului */
+    -fx-padding: 10px 20px;       /* Margini interioare pentru buton */
+    -fx-border-color: transparent;/* Fără border vizibil */
+}
+
+/* Buton la hover */
+.buttonAccept:hover {
+    -fx-background-color: #25ef1d; /* Culoare mai închisă la hover */
+}
+
+/* Buton la apăsare */
+.buttonAccept:pressed {
+    -fx-background-color: #0eac08; /* Culoare și mai închisă când este apăsat */
+}
+
+.text-field-input {
+    -fx-pref-height: 26px;         /* Lățimea câmpului de text */
+    -fx-padding: 5px 10px;        /* Margini interne pentru text */
+    -fx-border-radius: 20px;      /* Colțuri rotunjite */
+    -fx-border-color: transparent;   /* Culoare border gri deschis */
+    -fx-background-color: #e6e0f1; /* Culoare de fundal */
+    -fx-font-weight: bold;
+}
+
+.hbox-user-info{
+    -fx-background-color: #e6e0f1;
+    -fx-background-radius: 20px;
+}
+
+.buttonAdd {
+    -fx-background-color: rgb(15, 241, 7);; /* Culoare de fundal verde pentru buton */
+    -fx-background-radius: 20px;   /* Colțuri rotunjite ale butonului */
+    -fx-padding: 10px 20px;       /* Margini interioare pentru buton */
+    -fx-border-color: transparent;
+}
+
+.buttonMessage {
+    -fx-background-color: #8e5fe2; /* Culoare de fundal verde pentru buton */
+    -fx-background-radius: 20px;   /* Colțuri rotunjite ale butonului */
+    -fx-padding: 10px 20px;       /* Margini interioare pentru buton */
+    -fx-border-color: transparent;
+}
+
+/* Stilizare pentru intregul ListView */
+.custom-listview {
+    -fx-background-color: #ffffff;
+    -fx-border-color: transparent;
+}
+
+/* Stilizare pentru fiecare linie (ListCell) */
+.custom-listview .list-cell {
+    -fx-padding: 5px;               /* Padding pentru fiecare celulă */
+    -fx-background-color: #ffffff;   /* Culoare de fundal pentru fiecare celulă */
+    -fx-border-color: transparent;
+    -fx-border-width: 1px;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+/* Stilizare pentru linia selectată */
+.custom-listview .list-cell:filled:selected {
+    -fx-background-color: #b89ced;   /* Culoare de fundal pentru linia selectată */
+    -fx-text-fill: white;             /* Culoare text pentru linia selectată */
+}
+
+/* Stilizare pentru hover */
+.custom-listview .list-cell:hover {
+    -fx-background-color: #d4c5f1;   /* Culoare de fundal la hover */
+}
+
+.buttonSend {
+    -fx-background-color: rgb(228, 226, 226); /* Culoare de fundal verde pentru buton */
+    -fx-background-radius: 10px;   /* Colțuri rotunjite ale butonului */
+    -fx-padding: 5px 15px;       /* Margini interioare pentru buton */
+    -fx-border-color: transparent;
+    -fx-pref-height: 26px;
+    -fx-font-weight: bold;
+}
+
+.message-label {
+    -fx-padding: 5px 10px;        /* Margini interne pentru text */
+    -fx-border-radius: 25px;      /* Colțuri rotunjite */
+    -fx-border-color: transparent;   /* Culoare border gri deschis */
+    -fx-background-color: #e6e0f1; /* Culoare de fundal */
+    -fx-font-weight: bold;
+    -fx-max-width: 200;
+    -fx-wrap-text: true;
+}
+
+.hbox-notification{
+    -fx-background-color: #e6e0f1;
+    -fx-background-radius: 20px;
+    -fx-font-weight: bold;
+}
+
+.button-close {
+    -fx-background-color: #e42424; /* Culoare de fundal verde pentru buton */
+    -fx-background-radius: 20px;   /* Colțuri rotunjite ale butonului */
+    -fx-padding: 10px 20px;       /* Margini interioare pentru buton */
+    -fx-border-color: transparent;
+    -fx-text-fill: white;
+}
+
+.button-see {
+    -fx-background-color: rgb(15, 241, 7);; /* Culoare de fundal verde pentru buton */
+    -fx-background-radius: 20px;   /* Colțuri rotunjite ale butonului */
+    -fx-padding: 10px 20px;       /* Margini interioare pentru buton */
+    -fx-border-color: transparent;
+    -fx-text-fill: white;
+}
+
+
+
+
+

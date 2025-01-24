@@ -1,0 +1,83 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.javamodularity.moduleplugin' version '1.8.12'
+    id 'org.openjfx.javafxplugin' version '0.0.13'
+    id 'org.beryx.jlink' version '2.25.0'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    junitVersion = '5.10.2'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+application {
+    mainModule = 'org.example.map_6'
+    mainClass = 'org.example.map_6.HelloApplication'
+
+    applicationDefaultJvmArgs = [
+            "--module-path", layout.buildDirectory.dir("javafx-modules").get().asFile.absolutePath,
+            "--add-modules", "javafx.controls,javafx.fxml"
+    ]
+}
+
+javafx {
+    version = '17.0.6'
+    modules = ['javafx.controls', 'javafx.fxml']
+}
+
+dependencies {
+    implementation 'org.postgresql:postgresql:42.6.0'
+    implementation("org.jgrapht:jgrapht-core:1.5.1")
+
+    implementation 'org.openjfx:javafx-controls:17.0.6'
+    implementation 'org.openjfx:javafx-fxml:17.0.6'
+
+    testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+}
+
+tasks.register("copyJavaFXModules", Copy) {
+    from {
+        configurations.runtimeClasspath.filter {
+            it.name.endsWith("jar") && it.name.contains("javafx")
+        }
+    }
+    into(layout.buildDirectory.dir("javafx-modules"))
+}
+
+tasks.named("run").configure {
+    dependsOn(tasks.named("copyJavaFXModules"))
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jlink {
+    imageZip = layout.buildDirectory.file("distributions/app-${javafx.platform.classifier}.zip").get().asFile
+    options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
+    launcher {
+        name = 'app'
+    }
+}
+
+jlinkZip {
+    group = 'distribution'
+}

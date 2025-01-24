@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane styleClass="anchor-pane-background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="176.0" prefWidth="314.0" stylesheets="@login_view.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.labx.controllers.InfoBoxController">
+   <children>
+      <Label fx:id="textLabel" layoutX="9.0" layoutY="14.0" prefHeight="98.0" prefWidth="296.0" styleClass="label-info" wrapText="true" style="-fx-font-weight: bold">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="closeButton" layoutX="220.0" layoutY="119.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="80.0" text="Close" />
+   </children>
+</AnchorPane>

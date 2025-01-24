@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <StackPane prefHeight="63.0" prefWidth="714.0">
+            <children>
+                <ImageView fitHeight="63.0" fitWidth="714.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@topbar_image.jpg" />
+                    </image>
+                </ImageView>
+                <HBox prefHeight="63.0" prefWidth="724.0" style="-fx-background-color: transparent" styleClass="hbox-top-bar" stylesheets="@mainPage_view.css">
+                    <children>
+                        <Label prefHeight="40.0" prefWidth="80.0" style="-fx-text-fill: white" styleClass="label-socialize" stylesheets="@mainPage_view.css" text="socialize">
+                            <HBox.margin>
+                                <Insets left="40.0" top="10.0" />
+                            </HBox.margin>
+                        </Label>
+                        <Label prefHeight="40.0" prefWidth="40.0" styleClass="label-me" stylesheets="@mainPage_view.css" text=".me">
+                            <HBox.margin>
+                                <Insets bottom="3.0" top="10.0" />
+                            </HBox.margin>
+                        </Label>
+                        <Button fx:id="homeButton" mnemonicParsing="false" styleClass="button-selection-mode" stylesheets="@mainPage_view.css">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@home.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <HBox.margin>
+                                <Insets left="102.0" right="7.0" top="14.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="searchButton" layoutX="170.0" layoutY="10.0" mnemonicParsing="false" styleClass="button-selection-mode" stylesheets="@mainPage_view.css">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@search.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <HBox.margin>
+                                <Insets left="7.0" right="7.0" top="14.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="friendsButton" layoutX="216.0" layoutY="10.0" mnemonicParsing="false" styleClass="button-selection-mode" stylesheets="@mainPage_view.css">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@friends.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <HBox.margin>
+                                <Insets left="7.0" right="7.0" top="14.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="messageButton" layoutX="263.0" layoutY="10.0" mnemonicParsing="false" styleClass="button-selection-mode" stylesheets="@mainPage_view.css">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@message.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <HBox.margin>
+                                <Insets left="7.0" top="14.0" />
+                            </HBox.margin>
+                        </Button>
+                        <VBox prefHeight="56.0" prefWidth="128.0">
+                            <children>
+                                <Button fx:id="userButton" mnemonicParsing="false" prefHeight="45.0" prefWidth="129.0" styleClass="button-user" stylesheets="@mainPage_view.css">
+                                    <graphic>
+                                        <HBox prefHeight="22.0" prefWidth="216.0">
+                                            <children>
+                                                <!-- Textul va fi pus prima -->
+                                                <Label id="usernameLabel" fx:id="usernameLabel" prefHeight="22.0" prefWidth="68.0" style="-fx-text-fill: white" />
+                                                <ImageView fitHeight="22.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@profile.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </children>
+                                        </HBox>
+                                    </graphic>
+                                </Button>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="90.0" top="7.0" />
+                            </HBox.margin>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </StackPane>
+      <ListView fx:id="conversationsList" layoutY="114.0" prefHeight="284.0" prefWidth="200.0" styleClass="custom-listview" stylesheets="@mainPage_view.css" />
+      <Label layoutX="21.0" layoutY="75.0" styleClass="label-text-info" stylesheets="@mainPage_view.css" text="Messages" />
+      <BorderPane layoutX="199.0" layoutY="65.0" prefHeight="332.0" prefWidth="514.0">
+         <center>
+            <ScrollPane fx:id="chatScrollPane" prefHeight="280.0" prefWidth="542.0" BorderPane.alignment="CENTER">
+                <VBox fx:id="messageZone" layoutX="35.0" layoutY="-3.0" prefWidth="495.0" />
+            </ScrollPane>
+         </center>
+         <bottom>
+            <HBox prefHeight="52.0" prefWidth="520.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="messageField" prefHeight="30.0" prefWidth="390.0" promptText="Type a message..." styleClass="text-field-input" stylesheets="@mainPage_view.css">
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin></TextField>
+                  <Button fx:id="sendMessageButton" mnemonicParsing="false" prefHeight="21.0" prefWidth="78.0" styleClass="buttonSend" stylesheets="@mainPage_view.css" text="Send">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+         </bottom>
+         <top>
+            <Label fx:id="loadingLabel" text="Loading..." BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </top>
+      </BorderPane>
+    </children>
+</AnchorPane>
